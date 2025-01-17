@@ -1,0 +1,169 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* Header */
+h1 {
+    color: royalblue;
+    margin: 20px 0;
+    font-size: 2rem;
+}
+
+/* Main Container */
+.container {
+    position: relative;
+    max-width: 700px;
+    width: 90%;
+    background-color: whitesmoke;
+    margin: 10vh auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #262730;
+    font-weight: 800;
+    border-radius: 1rem;
+    box-shadow: 0 0 6px black;
+    overflow: hidden;
+}
+
+/* Random Section */
+.random {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#image {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+#image:hover {
+    transform: scale(1.1);
+}
+
+/* Fact Section */
+.fact {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    color: royalblue;
+    background-color: whitesmoke;
+    border: 2px solid rosybrown;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 4px black;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #262730;
+    color: white;
+}
+
+span{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #262730;
+    color: aliceblue;
+    line-height: 50px;
+    padding: 0.5rem;
+    margin-right: 5px;
+}
+
+/* Link */
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    border: 1px solid royalblue;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 4px black;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a:hover {
+    background-color: royalblue;
+    color: white;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    #image {
+        height: 80px;
+        width: 80px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+
+    a {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        font-size: 0.9rem;
+    }
+
+    #image {
+        height: 60px;
+        width: 60px;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+
+    a {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+}

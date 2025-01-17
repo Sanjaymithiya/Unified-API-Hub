@@ -1,0 +1,163 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: black;
+    color: royalblue;
+    text-align: center;
+    line-height: 3rem;
+    margin: 0;
+    padding: 1rem;
+}
+
+.container {
+    color: #011627;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    padding: 1rem;
+}
+
+button {
+    border: 1px solid #011627;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: #011627;
+    box-shadow: 0 0 4px black;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s; /* Add smooth hover effect */
+}
+
+button:hover {
+    background-color: black;
+    color: royalblue;
+    cursor: pointer;
+}
+
+input {
+    height: 25px;
+    width: 250px;
+    border-radius: 0.5rem;
+    border: none;
+    outline: 1px solid #011627;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: lightgray;
+    transition: outline 0.3s; /* Add focus effect */
+}
+
+input:focus {
+    outline: 2px solid royalblue;
+}
+
+.college {
+    line-height: 1.5rem;
+    color: #011627;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: bold; /* Corrected invalid property */
+    color: #011627;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    border: 1px solid royalblue;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 4px black;
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+a:hover {
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+}
+
+span {
+    display: inline-block; /* Ensure dimensions work correctly */
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px; /* Center text vertically */
+    background-color: #011627;
+    border-radius: 50%; /* Make span circular */
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 2rem;
+        padding: 0.5rem;
+    }
+
+    input {
+        width: 200px;
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.4rem;
+    }
+
+    a {
+        font-size: 0.9rem;
+        padding: 0.4rem;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    input {
+        width: 180px;
+        font-size: 0.8rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 0.3rem;
+    }
+
+    a {
+        font-size: 0.8rem;
+        padding: 0.3rem;
+    }
+}

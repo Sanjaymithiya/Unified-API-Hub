@@ -1,0 +1,125 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    line-height: 3rem;
+    text-align: center;
+    background-color: royalblue;
+    color: white;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    padding: 1rem; /* Add padding for better spacing */
+}
+
+.card {
+    background-color: white;
+    border: 2px solid black;
+    height: 350px;
+    width: 320px;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem; /* Add margin for spacing between cards */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for aesthetics */
+    transition: transform 0.3s, box-shadow 0.3s; /* Add hover animation */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Slight hover lift */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.card-info {
+    display: flex;
+    flex-wrap: wrap;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    border-top: 1px solid black;
+    width: 100%;
+    padding: 0.5rem; /* Add padding for better text spacing */
+}
+
+img {
+    height: 250px;
+    width: 300px;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    object-fit: cover; /* Ensure images fit nicely within the card */
+}
+
+a {
+    color: black;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+a:hover {
+    background-color: blue;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .card {
+        width: 90%; /* Adjust card width for smaller screens */
+        height: auto; /* Allow height to adjust dynamically */
+    }
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    a {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .card {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .card-info {
+        font-size: 0.9rem;
+    }
+}
